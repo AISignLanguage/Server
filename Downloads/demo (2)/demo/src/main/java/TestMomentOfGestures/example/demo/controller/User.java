@@ -1,5 +1,4 @@
 package TestMomentOfGestures.example.demo.controller;
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,9 +17,8 @@ public class User {
 
 
 
-@Getterd
+@Getter
 @Setter
 class MyResponse {
     private Boolean logIn_ok;
-
 }
