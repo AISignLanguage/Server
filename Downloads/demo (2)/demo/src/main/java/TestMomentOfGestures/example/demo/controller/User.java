@@ -15,6 +15,9 @@ public class User {
         this.usernick = usernick;
     }
 }
+
+
+
 @Getter
 @Setter
 class MyResponse {
