@@ -18,7 +18,7 @@ public class User {
 
 
 
-@Getter
+@Getterd
 @Setter
 class MyResponse {
     private Boolean logIn_ok;
