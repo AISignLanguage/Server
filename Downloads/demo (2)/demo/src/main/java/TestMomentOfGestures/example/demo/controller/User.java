@@ -5,13 +5,24 @@ import lombok.Setter;
 @Getter
 @Setter
 public class User {
-    private String username;
-    private String usernick;
+    private String name;
+    private String birthday;
+    private String email;
+    private String password;
+    private String nickName;
+    private String phoneNumber;
+
+
     public User() {
     }
-    public User(String username, String usernick) {
-        this.username = username;
-        this.usernick = usernick;
+
+    public User(String name, String birthday, String email, String password, String nickName, String phoneNumber) {
+        this.name = name;
+        this.birthday = birthday;
+        this.email = email;
+        this.password = password;
+        this.nickName = nickName;
+        this.phoneNumber = phoneNumber;
     }
 }
 
@@ -20,5 +31,6 @@ public class User {
 @Getter
 @Setter
 class MyResponse {
-    private Boolean logIn_ok;
+    private Boolean id_ok;
+    private Boolean pwd_ok;
 }
