@@ -18,7 +18,7 @@ public class StartController {
     }
 
     @PostMapping("/send-callList")
-    public CallListResponse sendCallListData(@RequestBody User user) {
+    public CallListResponse sendCallListData(@RequestBody CallList user) {
         CallListResponse response = new CallListResponse();
         response.setUri("hello");
         response.setInstallCheck(true);
