@@ -24,6 +24,16 @@ public class StartController {
         response.setInstallCheck(true);
         return response;
     }
+
+    @PostMapping("/send-news")
+    public NewsResponse sendNewsData(@RequestBody NewsList user){
+        NewsResponse response = new NewsResponse();
+        response.setTitle("tilte");
+        response.setImage("image");
+        response.setContent("content");
+        return response;
+    }
+
 }
 
 
