@@ -1,7 +1,6 @@
 package TestMomentOfGestures.example.demo.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -15,6 +14,14 @@ public class StartController {
         MyResponse response = new MyResponse();
         response.setId_ok(true);
         response.setPwd_ok(true);
+        return response;
+    }
+
+    @PostMapping("/send-callList")
+    public CallListResponse sendCallListData(@RequestBody User user) {
+        CallListResponse response = new CallListResponse();
+        response.setUri("hello");
+        response.setInstallCheck(true);
         return response;
     }
 }
